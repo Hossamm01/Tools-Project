@@ -1,13 +1,12 @@
 const { Pool } = require('pg');
 const bcrypt = require('bcrypt');
-const multer = require('multer');
 const path = require('path');
 
 // Set up PostgreSQL connection
 const pool = new Pool({
     user: 'postgres',
-    host: 'localhost',
-    database: 'tools3',
+    host: 'postgresql',
+    database: 'template1', //tools3
     password: 'moaaz', // Update this with the correct password
     port: 5432,
 });
